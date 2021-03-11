@@ -1,0 +1,59 @@
+body {
+  background-color: #171d23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #191919;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.body {
+  margin: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+}
+
+.container * {
+  background: #191919;
+  position: absolute;
+}
+.container .body div {
+  margin: 92px;
+  overflow: hidden;
+  padding: 25px 50px;
+  transform-origin: 100%100%;
+  transform: rotate(calc(90deg * var(--r, 1)));
+}
+.container .body img {
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 50px solid var(--c, #4f77ff);
+  transform: rotate(45deg);
+  transform-origin: 50%50%;
+}
+.container .body div:nth-child(2n) {
+  --c: #f9e492;
+}
+.container .body div:nth-child(2) {
+  --r: 2;
+}
+.container .body div:nth-child(3) {
+  --r: 3;
+}
+.container .body div:nth-child(4) {
+  --r: 4;
+}
