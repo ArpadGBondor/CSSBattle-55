@@ -27,33 +27,25 @@ body {
 }
 
 .container * {
-  background: #191919;
+  background: var(--b, #191919);
   position: absolute;
 }
-.container .body div {
+
+.container i,
+.container u {
+  --b: #4f77ff;
   margin: 92px;
-  overflow: hidden;
   padding: 25px 50px;
   transform-origin: 100%100%;
-  transform: rotate(calc(90deg * var(--r, 1)));
+  transform: rotate(90deg);
+  border-radius: 50px 50px 0 0;
 }
-.container .body img {
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  border: 50px solid var(--c, #4f77ff);
-  transform: rotate(45deg);
-  transform-origin: 50%50%;
+
+.container u,
+.container u i {
+  margin: -25px -50px;
 }
-.container .body div:nth-child(2n) {
-  --c: #f9e492;
-}
-.container .body div:nth-child(2) {
-  --r: 2;
-}
-.container .body div:nth-child(3) {
-  --r: 3;
-}
-.container .body div:nth-child(4) {
-  --r: 4;
+
+.container u {
+  --b: #f9e492;
 }
