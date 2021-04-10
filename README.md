@@ -2,4 +2,4 @@
 
 ## [My solution](https://arpadgbondor.github.io/CSSBattle-55/)
 
-### High Score: 606.64 (430 chars)
+### High Score: 651.54 (215 chars)
